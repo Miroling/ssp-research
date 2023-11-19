@@ -2,9 +2,11 @@ name: Build and publish to GitHub Pages
 
 # Configures this workflow to run every time a change is pushed to the branch called `release`.
 on:
-  push:
+  workflow_run:
+    workflows: ["Docker build"]
     branches: [main]
-  workflow_dispatch:
+    types: 
+      - completed
 
 # Defines two custom environment variables for the workflow. These are used for the Container registry domain, and a name for the Docker image that this workflow builds.
 env:
