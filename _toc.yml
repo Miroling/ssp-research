@@ -16,6 +16,6 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: README
+root: index.html
 chapters:
   - file: CONTRIBUTING
