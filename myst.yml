@@ -24,3 +24,12 @@ project:
       github: https://github.com/Miroling
       roles: writing
       url: https://taras.pro
+      affiliations:
+      - id: khpi
+        institution: National Technical University "Kharkiv Polytechnic Institute"
+        department: Educational and Scientific Institute of Computer Sciences and Information Technologies
+        address: 2, Kyrpychova str.
+        city: Kharkiv
+        region: Kharkiv region
+        country: Ukraine
+        postal_code: 61002

@@ -1,10 +1,10 @@
 {
-    "image": "mcr.microsoft.com/devcontainers/universal:2",
+    "image": "arm64v8/ubuntu:focal",
     "hostRequirements": {
       "cpus": 4
     },
     "waitFor": "onCreateCommand",
-    "updateContentCommand": "python3 -m pip install -r requirements.txt",
+    "updateContentCommand": "apt update && apt install -y webp python3 pip ca-certificates curl gnupg git && mkdir -p /etc/apt/keyrings && curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | gpg --dearmor -o /etc/apt/keyrings/nodesource.gpg && echo 'deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.com/node_18.x nodistro main' | tee /etc/apt/sources.list.d/nodesource.list && apt-get update && apt-get install nodejs -y && python3 -m pip install -r requirements.txt",
     "postCreateCommand": "",
     "postStartCommand": "myst start",
     "customizations": {
@@ -17,7 +17,8 @@
           "ms-python.python",
           "hediet.vscode-drawio",
           "robole.markdown-shortcuts",
-          "davidanson.vscode-markdownlint"
+          "davidanson.vscode-markdownlint",
+          "github.vscode-github-actions"
         ]
       }
 	},
@@ -25,6 +26,10 @@
 		"3000": {
 			"label": "Website"
 		}
-	}
+	},
+  "containerEnv": {
+    "TZ": "UTC",
+    "DEBIAN_FRONTEND": "noninteractive"
   }
+}
   
