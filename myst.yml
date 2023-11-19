@@ -1,9 +1,16 @@
 # See docs at: https://mystmd.org/guide/frontmatter
 version: 1
+
+site:
+  template: article-theme
+  options:
+    twitter: miroling
+    github: https://github.com/Miroling
+
 project:
-  # title:
+  title: Методи та засоби побудови високоефективних спеціалізованих програмних процесорів для обробки економічних та фінансових даних
   # description:
-  # thumbnail
+  banner: img/front.jpg
   keywords: []
   github: https://github.com/Miroling/research-template
   # bibliography: []
@@ -17,9 +24,3 @@ project:
       github: https://github.com/Miroling
       roles: writing
       url: https://taras.pro
-
-site:
-  template: article-theme
-  options:
-    twitter: miroling
-    github: https://github.com/Miroling

@@ -4,8 +4,9 @@
       "cpus": 4
     },
     "waitFor": "onCreateCommand",
-    "updateContentCommand": "python3 -m pip install -r requirements.txt && npm install -g mystmd",
+    "updateContentCommand": "python3 -m pip install -r requirements.txt",
     "postCreateCommand": "",
+    "postStartCommand": "myst start",
     "customizations": {
       "codespaces": {
         "openFiles": []
@@ -19,6 +20,11 @@
           "davidanson.vscode-markdownlint"
         ]
       }
-    }
+	},
+	"portsAttributes": {
+		"3000": {
+			"label": "Website"
+		}
+	}
   }
   
