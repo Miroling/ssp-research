@@ -2,6 +2,7 @@
 version: 1
 
 site:
+  title: Site Title
   template: article-theme
   options:
     twitter: miroling
