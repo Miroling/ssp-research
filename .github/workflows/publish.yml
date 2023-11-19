@@ -24,13 +24,22 @@ concurrency:
 
 # There is a single job in this workflow. It's configured to run on the latest available version of Ubuntu.
 jobs:
+  setup:
+    runs-on: ubuntu-latest
+    outputs:
+      image: ${{ steps.set_image.outputs.image }}
+    steps:
+      - id: set_image
+        run: echo "::set-output name=image::${{IMAGE}}" 
+
   publish:
+    needs: setup
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     container: 
-      image: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+      image: ${{ needs.setup.outputs.image }}
       options: --user root
       credentials:
          username: ${{ github.actor }}
