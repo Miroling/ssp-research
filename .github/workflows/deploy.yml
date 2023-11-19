@@ -36,7 +36,7 @@ jobs:
       - name: Install MyST Markdown
         run: npm install -g mystmd
       - name: Build HTML Assets
-        run: BASE_URL=$url myst build --html
+        run: BASE_URL=http://ssp-research.taras.pro myst build --html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
