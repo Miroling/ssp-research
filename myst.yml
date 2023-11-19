@@ -1,0 +1,25 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  # title:
+  # description:
+  # thumbnail
+  keywords: []
+  github: https://github.com/Miroling/research-template
+  # bibliography: []
+  open_access: true
+  license: CC-BY-4.0
+  # date: 2023/11/12
+  authors:
+    - name: Омеляненко Тарас
+      orcid: 0009-0000-8108-5648
+      twitter: miroling
+      github: https://github.com/Miroling
+      roles: writing
+      url: https://taras.pro
+
+site:
+  template: article-theme
+  options:
+    twitter: miroling
+    github: https://github.com/Miroling
