@@ -6,14 +6,14 @@ site:
   template: article-theme
   options:
     twitter: miroling
-    github: https://github.com/Miroling
+    github: https://github.com/Miroling/ssp-research
 
 project:
   title: Методи та засоби побудови високоефективних спеціалізованих програмних процесорів для обробки економічних та фінансових даних
   # description:
   banner: img/front.jpg
   keywords: []
-  github: https://github.com/Miroling/research-template
+  github: https://github.com/Miroling/ssp-research
   # bibliography: []
   open_access: true
   license: CC-BY-4.0
