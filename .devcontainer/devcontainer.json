@@ -21,7 +21,8 @@
           "hediet.vscode-drawio",
           "robole.markdown-shortcuts",
           "davidanson.vscode-markdownlint",
-          "zgithub.vscode-github-actions"
+          "zgithub.vscode-github-actions",
+          "github.remotehub"
         ]
       }
 	},
