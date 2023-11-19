@@ -67,6 +67,11 @@ jobs:
       credentials:
          username: ${{ github.actor }}
          password: ${{ secrets.github_token }}
+    permissions:
+      contents: read
+      id-token: write
+      packages: write
+      pages: write
     steps:
       - uses: actions/checkout@v4
       - name: Build website
