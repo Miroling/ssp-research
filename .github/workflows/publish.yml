@@ -21,7 +21,6 @@ permissions:
   contents: read
   pages: write
   id-token: write
-  packages: read
 
 concurrency:
   group: "pages"
@@ -30,6 +29,10 @@ concurrency:
 # There is a single job in this workflow. It's configured to run on the latest available version of Ubuntu.
 jobs:
   publish:
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
