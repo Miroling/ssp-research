@@ -7,13 +7,13 @@
       "cpus": 2
     },
     "waitFor": "onCreateCommand",
-    "updateContentCommand": "",
-    "postCreateCommand": "",
+    // "updateContentCommand": "",
+    // "postCreateCommand": "",
     "postStartCommand": "myst start",
     "customizations": {
-      "codespaces": {
-        "openFiles": []
-      },
+      // "codespaces": {
+      //   "openFiles": []
+      // },
       "vscode": {
         "extensions": [
           "ms-toolsai.jupyter",
