@@ -80,7 +80,7 @@ jobs:
       - name: Build website
         run: myst build --html
         env:
-          BASE_URL: https://ssp-research.taras.pro
+          BASE_URL: ${{ steps.deployment.outputs.page_url }}
 
       # Deploy the book's HTML to gh-pages branch
       - name: Setup Pages

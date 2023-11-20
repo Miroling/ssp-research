@@ -1,23 +1,18 @@
 # See docs at: https://mystmd.org/guide/frontmatter
 version: 1
-
-site:
-  title: Site Title
-  template: article-theme
-  options:
-    twitter: miroling
-    github: https://github.com/Miroling/ssp-research
-
 project:
-  title: Методи та засоби побудови високоефективних спеціалізованих програмних процесорів для обробки економічних та фінансових даних
-  # description:
-  banner: img/front.jpg
-  keywords: []
-  github: https://github.com/Miroling/ssp-research
-  # bibliography: []
+  title: "Методи та засоби побудови високоефективних спеціалізованих програмних процесорів для обробки економічних та фінансових даних"
+  # subtitle: 
+  license:
+    content: CC-BY-4.0
+    code: MIT
+  subject: 'Матеріали дослідження'
+  # venue:
+  #   title: --
   open_access: true
-  license: CC-BY-4.0
-  # date: 2023/11/12
+  # doi: -
+  github: https://github.com/Miroling/ssp-research
+  # date: 2023/08/01
   authors:
     - name: Омеляненко Тарас
       orcid: 0009-0000-8108-5648
@@ -25,7 +20,8 @@ project:
       github: https://github.com/Miroling
       roles: writing
       url: https://taras.pro
-      affiliations:
+      affiliation: khpi
+  affiliations:
       - id: khpi
         institution: National Technical University "Kharkiv Polytechnic Institute"
         department: Educational and Scientific Institute of Computer Sciences and Information Technologies
@@ -34,3 +30,38 @@ project:
         region: Kharkiv region
         country: Ukraine
         postal_code: 61002
+  # jupyter:
+  #   binder:
+  #     url: https://----.curvenote.dev/services/binder/
+  #     repo: curvenote/://----.
+  #     ref: HEAD
+  exports:
+    - format: pdf
+      article: paper.md
+  #   - format: docx
+  #     article: paper.md
+  #   - format: jats
+  #     article: paper.md
+  #     sub_articles:
+  #       - overview.ipynb
+  #       - mesh.ipynb
+  #       - divergence.ipynb
+  #       - weak-formulation.ipynb
+  #       - all-together-now.ipynb
+  #   - format: meca
+  requirements:
+    - requirements.txt
+  # resources:
+  #   - all-together-now.ipynb
+  banner: ./img/front.jpg
+site:
+  title: 'Методи та засоби побудови високоефективних спеціалізованих програмних процесорів для обробки економічних та фінансових даних'
+  template: article-theme
+  options:
+    twitter: miroling
+  # actions:
+  #   - title: Download PDF
+  #     url: ./.pdf
+  #     static: true
+  # logo_text: Методи та засоби побудови високоефективних спеціалізованих програмних процесорів для обробки економічних та фінансових даних
+
