@@ -1,0 +1,35 @@
+{
+    "build": {
+      "context": "..",
+      "dockerfile": "../Dockerfile"
+    },
+    "hostRequirements": {
+      "cpus": 2
+    },
+    "waitFor": "onCreateCommand",
+    "updateContentCommand": "",
+    "postCreateCommand": "",
+    "postStartCommand": "myst start",
+    "customizations": {
+      "codespaces": {
+        "openFiles": []
+      },
+      "vscode": {
+        "extensions": [
+          "ms-toolsai.jupyter",
+          "ms-python.python",
+          "hediet.vscode-drawio",
+          "robole.markdown-shortcuts",
+          "davidanson.vscode-markdownlint",
+          "zgithub.vscode-github-actions",
+          "github.remotehub"
+        ]
+      }
+	},
+	"portsAttributes": {
+		"3000": {
+			"label": "Website"
+		}
+	}
+}
+  
