@@ -10,7 +10,7 @@ RUN apt update \
     && apt-get update && apt-get install nodejs -y \
     && rm -rf /var/lib/apt/lists/*
 
-RUN npm install -g mystmd http-server
+RUN npm install -g mystmd http-server nodemon
 
 ADD requirements.txt requirements.txt
 

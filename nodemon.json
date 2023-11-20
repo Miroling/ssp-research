@@ -1,0 +1,7 @@
+{
+    "verbose": true,
+    "ignore": ["_build/**"],
+    "execMap": {
+      "build": "BASE_URL=https://turbo-space-fortnight-wrr476rj6525w7g-8000.github.dev myst build --html"
+    }
+}

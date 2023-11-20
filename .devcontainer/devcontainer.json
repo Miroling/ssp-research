@@ -9,7 +9,10 @@
     "waitFor": "onCreateCommand",
     // "updateContentCommand": "",
     // "postCreateCommand": "",
-    "postStartCommand": "myst start",
+    "postStartCommand": {
+      "nodemon": "nodemon --ignore '_build/**' -e 'md,ipynb' --exec 'myst build --html'",
+      "http-server": "http-server _build/html -c-1"
+    },
     "customizations": {
       "codespaces": {
         "openFiles": ["CONTRIBUTING.md"]
