@@ -11,9 +11,9 @@
     // "postCreateCommand": "",
     "postStartCommand": "myst start",
     "customizations": {
-      // "codespaces": {
-      //   "openFiles": []
-      // },
+      "codespaces": {
+        "openFiles": ["CONTRIBUTING.md"]
+      },
       "vscode": {
         "extensions": [
           "ms-toolsai.jupyter",
