@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM mcr.microsoft.com/vscode/devcontainers/base:dev-bullseye
 
 ENV TZ=UTC
 ENV DEBIAN_FRONTEND=noninteractive
