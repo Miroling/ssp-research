@@ -25,13 +25,15 @@
           "robole.markdown-shortcuts",
           "davidanson.vscode-markdownlint",
           "zgithub.vscode-github-actions",
-          "github.remotehub"
+          "github.remotehub",
+          "streetsidesoftware.code-spell-checker-ukrainian"
         ]
       }
 	},
 	"portsAttributes": {
 		"8080": {
-			"label": "Website"
+			"label": "Website",
+      "onAutoForward": "openPreview"
 		}
 	}
 }
