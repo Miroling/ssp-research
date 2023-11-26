@@ -19,7 +19,7 @@
     // },
     "postStartCommand": {
       "papers": "HOST=https://${CODESPACE_NAME}-10000.${GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN} myst start --keep-host --port 10000 --server-port 10100",
-      "server": "./wait-for-port.sh localhost:10000 -- ./server.sh"
+      "server": ".devcontainer/wait-for-port.sh 127.0.0.1:10000 -- .devcontainer/server.sh"
     },
     "customizations": {
       "codespaces": {
@@ -44,7 +44,7 @@
 	"portsAttributes": {
 		"8080": {
 			"label": "Website",
-      "onAutoForward": "openPreview"
+      // "onAutoForward": "openPreview"
 		}
 	}
 }
