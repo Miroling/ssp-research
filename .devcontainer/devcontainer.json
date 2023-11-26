@@ -18,8 +18,8 @@
     //   "config": ""
     // },
     "postStartCommand": {
-      "server": ".devcontainer/server.sh",
-      "papers": "HOST=https://${CODESPACE_NAME}-10000.${GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN} myst start --keep-host --port 10000 --server-port 10100"
+      "papers": "HOST=https://${CODESPACE_NAME}-10000.${GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN} myst start --keep-host --port 10000 --server-port 10100",
+      "server": "./wait-for-port.sh localhost:10000 -- ./server.sh"
     },
     "customizations": {
       "codespaces": {
