@@ -6,18 +6,20 @@
     "hostRequirements": {
       "cpus": 2
     },
-    "containerEnv":{
-      "HOST": "${CODESPACE_NAME}-10000.${GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN}"
-    },
-    // "remoteEnv":{
-    //   "HOST": "${CODESPACE_NAME}-10000.${GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN}"
+    // "containerEnv":{
+    //   "HOST": "https://${CODESPACE_NAME}-10000.${GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN}"
     // },
-    "waitFor": "onCreateCommand",
+    // "remoteEnv":{
+    //   "HOST": "https://${CODESPACE_NAME}-10000.${GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN}"
+    // },
+    "waitFor": "postCreateCommand",
     // "updateContentCommand": "",
-    // "postCreateCommand": "",
+    // "postCreateCommand": {
+    //   "config": ""
+    // },
     "postStartCommand": {
-      "papers": "myst start --keep-host --port 10000 --server-port 10100",
-      "http": "envsubst < .devcontainer/nginx.conf > .devcontainer/nginx.tmp.conf && nginx -c $CODESPACE_VSCODE_FOLDER/.devcontainer/nginx.tmp.conf"
+      "server": ".devcontainer/server.sh",
+      "papers": "HOST=https://${CODESPACE_NAME}-10000.${GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN} myst start --keep-host --port 10000 --server-port 10100"
     },
     "customizations": {
       "codespaces": {
