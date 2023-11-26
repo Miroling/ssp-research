@@ -37,7 +37,9 @@
           "streetsidesoftware.code-spell-checker-ukrainian",
           "executablebookproject.myst-highlight", 
           "chrisjsewell.myst-lsp",
-          "chrisjsewell.myst-tml-syntax"
+          "chrisjsewell.myst-tml-syntax",
+          "twday.bibmanager",
+          "MatthiasSchedel.bibtex-manager"
         ]
       }
 	},

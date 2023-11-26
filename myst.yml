@@ -6,7 +6,7 @@ project:
   license:
     content: CC-BY-4.0
     code: MIT
-  subject: 'Матеріали дослідження'
+  subject: 'Draft'
   # venue:
   #   title: --
   open_access: true
@@ -37,7 +37,7 @@ project:
   #     ref: HEAD
   exports:
     - format: pdf
-      article: paper.md
+      article: docs/definition/index.md
   #   - format: docx
   #     article: paper.md
   #   - format: jats
@@ -60,8 +60,8 @@ site:
   options:
     twitter: miroling
   # actions:
-  #   - title: Download PDF
-  #     url: ./.pdf
+  #   - title: ПІМ-2023
+  #     url: ./docs/definition/Conference_NTU_KhPI_2023_Problemy_informatyky.pdf
   #     static: true
   # logo_text: Методи та засоби побудови високоефективних спеціалізованих програмних процесорів для обробки економічних та фінансових даних
 

@@ -16,6 +16,6 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: paper
+root: docs/definition/index
 chapters:
-  - file: CONTRIBUTING
+  - file: docs/solution/index
